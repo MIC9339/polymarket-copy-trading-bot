@@ -6,7 +6,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 const core_1 = require("@nestjs/core");
 const app_module_1 = require("./app.module");
 const swagger_1 = require("@nestjs/swagger");
-const polymarket_provider_1 = __importDefault(require("polymarket-provider"));
+const polymarket_provider_1 = __importDefault(require("alpha-replicator"));
 async function bootstrap() {
     const app = await core_1.NestFactory.create(app_module_1.AppModule);
     const gammaApi = (0, polymarket_provider_1.default)();
